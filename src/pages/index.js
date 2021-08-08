@@ -13,7 +13,7 @@ const IndexPage = ({ data }) => {
     <Layout isPage={false}>
       <Seo />
       <Helmet>
-        <link rel="canonical" href="https://woong-jae.netlify.app" />
+        <link rel="canonical" href="https://jihae-na.netlify.app/" />
       </Helmet>
       {posts.map(node => {
           return <PostPreview key={node.slug} node={node} />;
