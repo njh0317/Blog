@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     siteUrl: "https://jihae-na.netlify.app/",
     title: "햣 블로그",
-    description: "Jihae의 기술 블로그",
+    description: "Na의 기술 블로그",
     author: "Jihae Na",
     socials: {
       email: "njnjh0317@gmail.com",

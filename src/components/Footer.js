@@ -23,7 +23,7 @@ const Footer = () => {
     return (
         <FooterContainer>
             <FooterContent>
-                © {new Date().getFullYear()}, jihae All rights reserved.
+                © {new Date().getFullYear()}, jihae-Na All rights reserved.
             </FooterContent>
         </FooterContainer>
     )
