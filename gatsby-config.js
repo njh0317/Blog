@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://woong-jae.netlify.app",
+    siteUrl: "https://jihae-na.netlify.app/",
     title: "햣 블로그",
     description: "Jihae의 기술 블로그",
     author: "Jihae Na",
