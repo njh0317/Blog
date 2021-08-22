@@ -1,8 +1,8 @@
 const variables = {
     colors: {
-      base: "#25292e",
-      background: "#25292e", //#141c23
-      blackLight: "#313746",
+      base: "#797A7E",
+      background: "#F7F2E7", //#141c23
+      blackLight: "#D8D3CD",
       gray: "#727d86",
       silver: "#969fa7",
       whiteSmoke: "#f1f4f7",

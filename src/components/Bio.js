@@ -13,7 +13,7 @@ const BioContainer = styled.div`
     width: ${props => props.theme.sizes.bioWidth};
     padding: 1.5em;
     font-size: 15.5px;
-    background: ${props => props.theme.colors.blackLight};
+    background: ${props => props.theme.colors.base};
     border-radius: 4px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
     @media screen and (max-width: ${props => props.theme.responsive.large}) {
@@ -69,6 +69,12 @@ const BioLinks = styled.div`
     width: 40px;
     height: 33px;
   }
+  a {
+    color: #FFF;
+    &:hover {
+      color: ${(props) => props.theme.colors.silver};
+    }
+  }
 `;
 const BioLink = styled.a`
   width: 33.3%;
@@ -76,11 +82,7 @@ const BioLink = styled.a`
   font-weight: 700;
   font-size: 0.9em;
   line-height: 30px;
-  color: ${(props) => props.theme.colors.gray};
   letter-spacing: 0.5px;
-  &:hover {
-    color: ${(props) => props.theme.colors.highlight};
-  }
 `;
 
 const Bio = ({ author, socials }) => {
@@ -94,17 +96,17 @@ const Bio = ({ author, socials }) => {
             </BioHeader>
             <BioMain>
                 <BioText>
-                    ㅎㅇ
+                    화이팅
                 </BioText>
                 <BioLinks>
                     <BioLink href={`mailto:${socials.email}`}>
-                      <MdMail color={'#FFF'} size={32} />
+                      <MdMail className="bio-icon" size={32} />
                     </BioLink>
                     <BioLink href={`https://github.com/${socials.github}`}>
-                        <FaGithub color={'#FFF'} size={32} />
+                        <FaGithub size={32} />
                     </BioLink>
                     <BioLink href={`https://instagram.com/${socials.instagram}`}>
-                        <FaInstagram color={'#FFF'} size={32} />
+                        <FaInstagram size={32} />
                     </BioLink>
                 </BioLinks>
             </BioMain>

@@ -50,6 +50,7 @@ const PostCardContent = styled.div`
     font-size: 1.4em;
     font-weight: 600;
     line-height: 1.4;
+    color: ${props => props.theme.colors.base}
   }
   time {
     display: block;

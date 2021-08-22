@@ -1,6 +1,6 @@
 import { Link } from 'gatsby'
 import * as React from 'react'
-import styled, { css } from 'styled-components'
+import styled from 'styled-components'
 
 const HeaderContainer = styled.header`
     max-width: ${props => props.theme.sizes.maxWidth};
@@ -27,9 +27,12 @@ const HeaderContent = styled.div`
         font-weight: 600;
         letter-spacing: 1px;
         font-size: 2.5rem;
-        color : ${props => props.theme.colors.whiteSmoke};
+        color : ${props => props.theme.colors.base};
         @media screen and (max-width: ${props => props.theme.responsive.small}) {
             font-size: 2rem;
+        }
+        &:hover {
+            color: ${(props) => props.theme.colors.silver};
         }
     }
 `

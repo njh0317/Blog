@@ -15,7 +15,7 @@ const FooterContainer = styled.footer`
 `
 
 const FooterContent = styled.div`
-    color: ${props => props.theme.colors.whiteSmoke};
+    color: ${props => props.theme.colors.base};
     text-align: center;
 `
 
