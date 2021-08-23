@@ -9,7 +9,9 @@ const variables = {
       highlight: "#20a8ea",
       red: "#f7615f",
       orange: "#ffa22b",
+      graygreen: "#D9E4DD",
       gradient: "linear-gradient(-45deg,#ffa649,#f7645b,#805ed4)"
+
     },
     sizes: {
       bioWidth: "230px",

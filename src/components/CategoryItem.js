@@ -5,10 +5,11 @@ import styled from "styled-components"
 const CategoryContainer = styled.div`
     background-color: ${props => props.theme.colors.blackLight};
     border-radius: 30px;
-    margin: 0 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+    margin: 0 5px;
     color: ${props => props.theme.colors.base};
     &:hover {
-      background: ${props => props.theme.colors.gradient};
+      background: ${props => props.theme.colors.graygreen};
     
     }
     a {

@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     siteUrl: "https://jihae-na.netlify.app/",
-    title: "햣 블로그",
+    title: "Na 블로그",
     description: "Na의 기술 블로그",
     author: "Jihae Na",
     socials: {
@@ -16,8 +16,8 @@ module.exports = {
         color: "#0c9ee4",
       },
       {
-        name: "Front",
-        slug: "front",
+        name: "Android",
+        slug: "android",
         color: "#f7615f",
       },
       {
@@ -75,24 +75,6 @@ module.exports = {
         ],
       },
     },
-    // {
-    //   resolve: `gatsby-plugin-manifest`,
-    //   options: {
-    //     name: "햣 블로그 by woong-jae",
-    //     short_name: "햣 블로그",
-    //     start_url: "/",
-    //     background_color: "##25292e",
-    //     theme_color: "##25292e",
-    //     // Enables "Add to Homescreen" prompt and disables browser UI (including back button)
-    //     // see https://developers.google.com/web/fundamentals/web-app-manifest/#display
-    //     display: "standalone",
-    //     icon: "src/images/icon.png", // This path is relative to the root of the site.
-    //     // An optional attribute which provides support for CORS check.
-    //     // If you do not provide a crossOrigin option, it will skip CORS for manifest.
-    //     // Any invalid keyword or empty string defaults to `anonymous`
-    //     crossOrigin: `use-credentials`,
-    //   },
-    // },
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
@@ -115,5 +97,6 @@ module.exports = {
     "gatsby-transformer-sharp",
     "gatsby-plugin-styled-components",
     "gatsby-plugin-image",
+    
   ],
 };

@@ -10,7 +10,7 @@ const SEO = ({ description, lang, meta, title }) => {
       render={(data) => {
         const metaDescription =
           description || data.site.siteMetadata.description;
-        const defaultTitle = "햣 블로그";
+        const defaultTitle = "Na 블로그";
         return (
           <Helmet
             htmlAttributes={{

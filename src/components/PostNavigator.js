@@ -22,7 +22,7 @@ const PostCardWrapper = styled.div`
     color: ${props => props.theme.colors.blackLight};
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
     &:hover {
-      background: #e0ebf1;
+      background: ${props => props.theme.colors.graygreen};
     }
     @media screen and (max-width: ${props => props.theme.responsive.small}) {
       padding: 10px;
@@ -52,13 +52,14 @@ const PostCardContent = styled.div`
     font-size: 1.1em;
     font-weight: 600;
     line-height: 1.45;
+    color: ${props => props.theme.colors.base};
   }
   time {
     display: block;
     margin-bottom: 0.1em;
     letter-spacing: 0.05em;
     font-size: 0.8em;
-    color: ${props => props.theme.colors.silver};
+    color: ${props => props.theme.colors.gray};
   }
   @media screen and (max-width: ${props => props.theme.responsive.small}) {
     padding-left: 15px;

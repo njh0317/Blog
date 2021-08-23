@@ -96,7 +96,7 @@ const Bio = ({ author, socials }) => {
             </BioHeader>
             <BioMain>
                 <BioText>
-                    화이팅
+                    🐢🐢🐢
                 </BioText>
                 <BioLinks>
                     <BioLink href={`mailto:${socials.email}`}>

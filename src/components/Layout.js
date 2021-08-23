@@ -1,14 +1,12 @@
 import * as React from "react"
 import styled, { ThemeProvider } from "styled-components";
 import { useStaticQuery, graphql } from 'gatsby'
-import { MDXProvider } from "@mdx-js/react"
 
 import GlobalStyle from "../styles/global";
 import theme from "../styles/theme";
 import Bio from "./Bio";
 import Footer from "./Footer";
 import Header from "./Header"
-import CodeBlock from "./CodeBlock";
 import CategoryItem from "./CategoryItem";
 
 const MainContainer = styled.div`
@@ -62,10 +60,6 @@ const Category = styled.div`
     margin-bottom: 20px;
 `
 
-const components = {
-    code: CodeBlock,
-};
-
 const Layout = ({ children, isPage }) => {
     const data = useStaticQuery(graphql`
         query {
@@ -88,36 +82,34 @@ const Layout = ({ children, isPage }) => {
     `)
 
     return (
-        <MDXProvider components={components}>
-            <ThemeProvider theme={theme}>
-                <Header title={data.site.siteMetadata.title} />
-                <MainContainer>
-                    <MainContent>
-                        {!isPage && <Bio author={data.site.siteMetadata.author} socials={data.site.siteMetadata.socials} />}
-                        {isPage ? 
-                            <PostWrapper>
-                                <main>{children}</main>
-                            </PostWrapper>
-                        :
-                            <MainWrapper>
-                            <Category>
-                                {data.site.siteMetadata.categories.map(category => {
-                                    return (
-                                        <CategoryItem category={category}/>
-                                    )
-                                })}
-                            </Category>
-                                <main>{children}</main>
-                            </MainWrapper>
-                        }
-                    </MainContent>
-                </MainContainer>
+        <ThemeProvider theme={theme}>
+            <Header title={data.site.siteMetadata.title} />
+            <MainContainer>
+                <MainContent>
+                    {!isPage && <Bio author={data.site.siteMetadata.author} socials={data.site.siteMetadata.socials} />}
+                    {isPage ? 
+                        <PostWrapper>
+                            <main>{children}</main>
+                        </PostWrapper>
+                    :
+                        <MainWrapper>
+                        <Category>
+                            {data.site.siteMetadata.categories.map(category => {
+                                return (
+                                    <CategoryItem category={category}/>
+                                )
+                            })}
+                        </Category>
+                            <main>{children}</main>
+                        </MainWrapper>
+                    }
+                </MainContent>
+            </MainContainer>
 
-                <Footer />
+            <Footer />
 
-                <GlobalStyle />
-            </ThemeProvider>
-        </MDXProvider>
+            <GlobalStyle />
+        </ThemeProvider>
     )
 }
 

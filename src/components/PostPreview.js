@@ -12,7 +12,7 @@ const PostCardWrapper = styled.div`
     color: #fff;
     border-top: solid 1px ${props => props.theme.colors.blackLight};
     &:hover {
-      background: ${props => props.theme.colors.blackLight};
+      background: ${props => props.theme.colors.graygreen};
     }
     @media screen and (max-width: ${props => props.theme.responsive.large}) {
       padding: 1em 0;
@@ -26,7 +26,7 @@ const PostCardEmoji = styled.p`
   margin: 0;
   width: 90px;
   height: 90px;
-  background: ${props => props.theme.colors.blackLight};
+  background: ${props => props.theme.colors.graygreen};
   border-radius: 4px;
   font-size: 50px;
   img {
